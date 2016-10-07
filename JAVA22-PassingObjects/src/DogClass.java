@@ -10,11 +10,11 @@
  * Mike Talks, Sept 2016
  */
 
-public class dogClass {
+public class DogClass {
 
 	public String name;
 	
-	public dogClass (String dogName)
+	public DogClass (String dogName)
 	{
 		name = dogName;
 	}

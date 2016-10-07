@@ -12,7 +12,7 @@ import org.junit.Test;
  * Mike Talks, Sept 2016
  */
 
-public class testDogs {
+public class TestDogs {
 	
 	public void changeNameByString (String name)
 	{
@@ -20,27 +20,27 @@ public class testDogs {
 		System.out.println("Changed name string to " + name);
 	}
 
-	public void changeNameUsingMethod (dogClass myDog)
+	public void changeNameUsingMethod (DogClass myDog)
 	{
 		myDog.setName("Ralf");
 		System.out.println("changeNameUsingMethod dog is " + myDog.getName());
 	}
 	
-	public void changeNameUsingAttribute (dogClass myDog)
+	public void changeNameUsingAttribute (DogClass myDog)
 	{
 		myDog.name = "Mr Flibble";
 		System.out.println("changeNameUsingAttribute dog is " + myDog.getName());
 	}
 	
-	public void getNewDog (dogClass myDog)
+	public void getNewDog (DogClass myDog)
 	{
-		myDog = new dogClass("Bertie");
+		myDog = new DogClass("Bertie");
 		System.out.println("getNewDog dog is " + myDog.getName());
 	}
 
-	public dogClass returnNewDog (dogClass myDog)
+	public DogClass returnNewDog (DogClass myDog)
 	{
-		myDog = new dogClass("Isis");
+		myDog = new DogClass("Isis");
 		System.out.println("returnNewDog dog is " + myDog.getName());
 		return myDog;
 	}
@@ -48,7 +48,7 @@ public class testDogs {
 	@Test
 	public void whoIsMyDog()
 	{
-		dogClass thisDog = new dogClass("Max");
+		DogClass thisDog = new DogClass("Max");
 		System.out.println("thisDog dog is " + thisDog.getName());
 		
 		changeNameByString(thisDog.name);
